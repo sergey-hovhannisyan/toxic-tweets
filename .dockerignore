@@ -1,0 +1,14 @@
+# Virtual environment directories
+venv/
+
+# Data directories
+data/
+
+# Temp files & directories
+*.pyc
+__pycache__/
+
+# Development specific files & directories
+tests/
+docs/
+README.md
