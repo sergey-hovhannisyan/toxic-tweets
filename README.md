@@ -1,3 +1,15 @@
+---
+title: Toxic Tweets
+emoji: 🤗
+colorFrom: green
+colorTo: blue
+sdk: streamlit
+sdk_version: 1.17.0
+app_file: app.py
+pinned: false
+license: bsd-3-clause
+---
+
 # _Toxic Tweets_
 ##### __Objective__ Focused on the study of negative online behaviors, like toxic comments using natural language processing models.
 
