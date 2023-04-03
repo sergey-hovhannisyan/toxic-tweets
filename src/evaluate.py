@@ -1,10 +1,15 @@
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
 
 def evaluate_prompt(model_name, prompt):
-    model = AutoModelForSequenceClassification.from_pretrained(model_name)
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    classifier = pipeline("sentiment-analysis", modle=model, tokenizer=tokenizer)
+    model = AutoModelForSequenceClassification.from_pretrained(model_name)
+    
+    classifier = pipeline("sentiment-analysis", model=model, tokenizer=tokenizer)
     return classifier(prompt)
 
 def model_list():
-     return ["bert", "robert", "albert"]
+    sentiment_models = [
+        "distilbert-base-uncased-finetuned-sst-2-english",
+        "bert-base-uncased",
+        "albert-base-v2"]
+    return sentiment_models
