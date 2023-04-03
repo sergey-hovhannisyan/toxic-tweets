@@ -11,15 +11,21 @@ section1, section2 = st.columns(2)
 
 # functions
 def predict(model_name, prompt):
-    label, score = evaluate_prompt(model_name, prompt)
+    output = evaluate_prompt(model_name, prompt)[0]
+    label = output["label"]
+    score = output["score"]
     with section2:
-        st.write(label, score)
+        st.write("Label:", label)
+        st.write("Score:", score)
+        st.success("Completed!")
 
 
 with section1:
     st.header("Input")
-    prompt = st.text_area("Prompt")
+    prompt = st.text_area("Prompt", placeholder="Eat Up Every Moment")
     model = st.selectbox("Select Model", sentiment_model_names)
+    st.warning("albert & bert are self-supervised models, so possible relations are\
+               LABLE_0|NEGATIVE, LABEL_1|POSITIVE.")
     st.button("Submit", on_click=lambda: predict(model, prompt))
 with section2:
     st.header("Output")
