@@ -20,7 +20,7 @@ def predict(model_name, prompt):
 # main code
 with section1:
     st.header("Input")
-    prompt = st.text_area("Prompt", "Eat Up Every Moment")
+    prompt = st.text_area("Prompt", "You fucking idiot. I will kill you!")
     model = st.selectbox("Select Model", sentiment_model_names)
     st.warning("albert & bert are self-supervised models, so possible relations are\
                LABLE_0|NEGATIVE, LABEL_1|POSITIVE.")
