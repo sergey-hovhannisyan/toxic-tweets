@@ -4,8 +4,7 @@ from src.evaluate import evaluate_prompt, model_list
 st.title("Toxic Tweets")
 
 # description of the project
-st.info("This NLP machine learning project aims to predict the toxicity level of input tweets using fine-tuning techniques on a pre-trained language model. The project utilizes Docker containers for efficient deployment and management, while Hugging Face Spaces and Transformers provide the necessary libraries and tools for building and training the model. The model is trained on a large dataset of labeled toxic tweets to enable it to classify new input tweets as toxic or non-toxic. This project can help improve online safety by automatically flagging potentially harmful content.")
-
+st.info("The primary objective of this machine learning project in Natural Language Processing (NLP) is to accurately predict the toxicity level of tweets by utilizing fine-tuning techniques on a pre-trained language model. To achieve this, the project utilizes Docker containers for efficient deployment and management and Hugging Face Spaces and Transformers libraries for model building and training. The model is trained on a substantial dataset of labeled toxic tweets, allowing it to classify new tweets into five toxicity labels: \"severe toxic,\", \"obscene,\", \"threat,\", \"insult,\", and \"identity hate.\" By integrating the appropriate platform and enabling the automatic flagging of potentially harmful content, this project has the potential to enhance online safety significantly.")
 # variables defined
 sentiment_model_names = model_list()
 section1, section2 = st.columns(2)
