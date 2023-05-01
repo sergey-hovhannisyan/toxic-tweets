@@ -9,15 +9,12 @@ app_file: app.py
 pinned: false
 license: bsd-3-clause
 ---
-# _Toxic Tweets_ ([Test App](https://huggingface.co/spaces/sergey-hovhannisyan/toxic-tweets))
+# _Toxic Tweets_
 # _Objective_ 
 The primary objective of this machine learning project in Natural Language Processing (NLP) is to accurately predict the toxicity level of tweets by utilizing fine-tuning techniques on a pre-trained language model. To achieve this, the project utilizes Docker containers for efficient deployment and management and Hugging Face Spaces and Transformers libraries for model building and training. The model is trained on a substantial dataset of labeled toxic tweets, allowing it to classify new tweets into five toxicity labels: "severe toxic," "obscene," "threat," "insult," and "identity hate." By integrating the appropriate platform and enabling the automatic flagging of potentially harmful content, this project has the potential to enhance online safety significantly. 
 
-### _App Demo_
-<video width="560" height="315" controls>
-  <source src="./docs/images/toxic-tweets-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+### _App Demo_ _([Test App](https://huggingface.co/spaces/sergey-hovhannisyan/toxic-tweets))_
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RrrfLk7JMYE" title="Toxic Tweets Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### _Setup Steps_ 
 1. Clone Toxic Tweets repo
